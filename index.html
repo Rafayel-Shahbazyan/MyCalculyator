@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+    <table>
+       <tr >
+           <td colspan="4" rowspan="2" class="input-td">
+               <form name="form"><input type="text" id="text-content" name="text" readonly></form>
+           </td>
+       </tr>
+       <tr></tr>
+       <tr>
+           <td><button class="orange" onclick="insert('*')">*</button></td>
+           <td><button class="orange" onclick="insert('/')">/</button></td>
+           <td><button class="orange" onclick="insert('-')">-</button></td>
+           <td><button class="orange" onclick="insert('+')">+</button></td>
+       </tr>
+       <tr>
+           <td><button onclick="insert('1')">1</button></td>
+           <td><button onclick="insert('2')">2</button></td>
+           <td><button onclick="insert('3')">3</button></td>
+           <td><button onclick="insert('4')">4</button></td>
+       </tr>
+       <tr>
+           <td><button onclick="insert('5')">5</button></td>
+           <td><button onclick="insert('6')">6</button></td>
+           <td><button onclick="insert('7')">7</button></td>
+           <td><button onclick="insert('8')">8</button></td>
+       </tr>
+       <tr>
+           <td><button onclick="insert('9')">9</button></td>
+           <td><button onclick="insert('0')">0</button></td>
+           <td><button  onclick="insert('.')">.</button></td>
+           <td><button style="background-color: green;" onclick="havasar()">=</button></td>
+       </tr>
+       <tr>
+            <td><button style="background-color: red;" onclick="back()">&larr;</button></td>
+            <td><button style="background-color: red;" onclick="clean()">C</button></td>
+       </tr>
+    </table>
+    <script src="./script.js"></script>
+</body>
+</html>
